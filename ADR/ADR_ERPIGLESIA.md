@@ -149,3 +149,13 @@ C) Problema: auth mezclada con otras responsabilidades
 D) Decisión: centralizar config de seguridad y servicios JWT
 
 E) Mejora: cambios de seguridad no rompen dominios
+
+## Cambios implementados 
+### implementado 1 - AuthService
+1) Ubicación: backend/src/.../AuthController.java, AuthService.java
+
+2) Antes: controller contenía lógica de autenticación y token
+
+3) Después: controller delega a AuthService y retorna respuesta
+
+4) Prueba funcional: Login válido → acceso normal; login inválido → error controlado (captura/video)
