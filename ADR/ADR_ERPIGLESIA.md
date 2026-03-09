@@ -169,8 +169,8 @@ E) Mejora: cambios de seguridad no rompen dominios
 
 4) Prueba funcional: 200 OK para crear una nueva iglesia, 403 porque no deja crear mas de una sola iglesia
 
-### implementado  - UserService SRP 
-1) Ubicación: backend/src/.../UserController.java, churchService.java
+### implementado 3  - UserService SRP 
+1) Ubicación: backend/src/.../UserController.java, Userervice.java
 
 2) Antes: El UserController contenía lógica de negocio, validaciones de email, encriptación de contraseña y acceso directo al repositorio AppUserRepository, mezclando responsabilidades de la capa HTTP con reglas del dominio.
 
@@ -178,6 +178,25 @@ E) Mejora: cambios de seguridad no rompen dominios
 
 4) Prueba funcional: 200 OK al crear un nuevo usuario correctamente mediante POST /api/users.403 Forbidden cuando se intenta acceder al endpoint sin un token con rol ADMIN.
 
+### Implementado 4 — DTOs para request/response  Adapter + SRP
+1) Ubicación: backend/src/.../UserController.java
 
+2) Antes: Los controladores definían directamente los record de request y response dentro de los controladores, generando acoplamiento entre la capa HTTP y la representación de datos. 
+
+3) Despues:Se extrajeron los objetos de request y response a una capa DTO, permitiendo separar la representación de datos del controller.
+
+4) Prueba funcional: Se extrajeron los objetos de request y response a una capa DTO, permitiendo separar la representación de datos del controller.
+
+### Implementado 5 — Mapper para conversión DTO ↔ Entity
+1) Ubicación: backend/src/main/java/com/iglesia/UserMapper.java
+
+2) Antes: La conversión entre DTO y Entity se hacía manualmente con new y setters en múltiples lugares, generando duplicación.
+
+3) Despues:Se creó una clase UserMapper encargada de convertir entre AppUser y UserResponse.
+centraliza conversiones
+evita duplicación
+mejora mantenibilidad
+
+4) Prueba funcional: Se verificó que el endpoint de creación de usuarios sigue retornando correctamente la información del usuario creado utilizando el nuevo mapper para convertir la entidad AppUser en UserResponse.
 
 

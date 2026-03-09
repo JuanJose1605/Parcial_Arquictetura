@@ -11,12 +11,15 @@ C:\Users\Juan\Documents\arquitectura\Parcial_Arquictetura\Proyecto\backend\src\m
 C:\Users\Juan\Documents\arquitectura\Parcial_Arquictetura\Proyecto\backend\src\main\java\com\iglesia\Course.java
 C:\Users\Juan\Documents\arquitectura\Parcial_Arquictetura\Proyecto\backend\src\main\java\com\iglesia\CourseController.java
 C:\Users\Juan\Documents\arquitectura\Parcial_Arquictetura\Proyecto\backend\src\main\java\com\iglesia\CourseRepository.java
+C:\Users\Juan\Documents\arquitectura\Parcial_Arquictetura\Proyecto\backend\src\main\java\com\iglesia\CreateUserRequest.java
 C:\Users\Juan\Documents\arquitectura\Parcial_Arquictetura\Proyecto\backend\src\main\java\com\iglesia\DashboardController.java
 C:\Users\Juan\Documents\arquitectura\Parcial_Arquictetura\Proyecto\backend\src\main\java\com\iglesia\DataInitializer.java
 C:\Users\Juan\Documents\arquitectura\Parcial_Arquictetura\Proyecto\backend\src\main\java\com\iglesia\Enrollment.java
 C:\Users\Juan\Documents\arquitectura\Parcial_Arquictetura\Proyecto\backend\src\main\java\com\iglesia\EnrollmentController.java
 C:\Users\Juan\Documents\arquitectura\Parcial_Arquictetura\Proyecto\backend\src\main\java\com\iglesia\EnrollmentRepository.java
 C:\Users\Juan\Documents\arquitectura\Parcial_Arquictetura\Proyecto\backend\src\main\java\com\iglesia\EnrollmentStatus.java
+C:\Users\Juan\Documents\arquitectura\Parcial_Arquictetura\Proyecto\backend\src\main\java\com\iglesia\ErrorResponse.java
+C:\Users\Juan\Documents\arquitectura\Parcial_Arquictetura\Proyecto\backend\src\main\java\com\iglesia\GlobalExceptionHandler.java
 C:\Users\Juan\Documents\arquitectura\Parcial_Arquictetura\Proyecto\backend\src\main\java\com\iglesia\IglesiaAdminApplication.java
 C:\Users\Juan\Documents\arquitectura\Parcial_Arquictetura\Proyecto\backend\src\main\java\com\iglesia\JwtAuthFilter.java
 C:\Users\Juan\Documents\arquitectura\Parcial_Arquictetura\Proyecto\backend\src\main\java\com\iglesia\JwtService.java
@@ -34,5 +37,7 @@ C:\Users\Juan\Documents\arquitectura\Parcial_Arquictetura\Proyecto\backend\src\m
 C:\Users\Juan\Documents\arquitectura\Parcial_Arquictetura\Proyecto\backend\src\main\java\com\iglesia\PersonRepository.java
 C:\Users\Juan\Documents\arquitectura\Parcial_Arquictetura\Proyecto\backend\src\main\java\com\iglesia\SecurityConfig.java
 C:\Users\Juan\Documents\arquitectura\Parcial_Arquictetura\Proyecto\backend\src\main\java\com\iglesia\UserController.java
+C:\Users\Juan\Documents\arquitectura\Parcial_Arquictetura\Proyecto\backend\src\main\java\com\iglesia\UserMapper.java
+C:\Users\Juan\Documents\arquitectura\Parcial_Arquictetura\Proyecto\backend\src\main\java\com\iglesia\UserResponse.java
 C:\Users\Juan\Documents\arquitectura\Parcial_Arquictetura\Proyecto\backend\src\main\java\com\iglesia\UserRole.java
 C:\Users\Juan\Documents\arquitectura\Parcial_Arquictetura\Proyecto\backend\src\main\java\com\iglesia\UserService.java
