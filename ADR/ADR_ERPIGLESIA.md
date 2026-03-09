@@ -167,4 +167,17 @@ E) Mejora: cambios de seguridad no rompen dominios
 
 3) Después: Se creó ChurchService para encapsular la lógica de creación y consulta de iglesia, dejando al controller únicamente como punto de entrada HTTP.
 
-4) Prueba funcional: 200 OK si ya existe una iglesia; 404 Not Found si no hay ninguna
+4) Prueba funcional: 200 OK para crear una nueva iglesia, 403 porque no deja crear mas de una sola iglesia
+
+### implementado  - UserService SRP 
+1) Ubicación: backend/src/.../UserController.java, churchService.java
+
+2) Antes: El UserController contenía lógica de negocio, validaciones de email, encriptación de contraseña y acceso directo al repositorio AppUserRepository, mezclando responsabilidades de la capa HTTP con reglas del dominio.
+
+3) Despues: Se creó UserService para encapsular la lógica de creación de usuarios, validaciones de duplicidad de email y encriptación de contraseña, dejando al UserController únicamente como punto de entrada HTTP que delega las operaciones al servicio.
+
+4) Prueba funcional: 200 OK al crear un nuevo usuario correctamente mediante POST /api/users.403 Forbidden cuando se intenta acceder al endpoint sin un token con rol ADMIN.
+
+
+
+
