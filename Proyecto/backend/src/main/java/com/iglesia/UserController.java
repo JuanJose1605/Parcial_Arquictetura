@@ -1,7 +1,6 @@
 package com.iglesia;
 
 
-
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
@@ -21,4 +20,5 @@ public class UserController {
         return userService.createClient(request);
     }
 
+    
 }

@@ -199,4 +199,25 @@ mejora mantenibilidad
 
 4) Prueba funcional: Se verificó que el endpoint de creación de usuarios sigue retornando correctamente la información del usuario creado utilizando el nuevo mapper para convertir la entidad AppUser en UserResponse.
 
+## Conclusion proyecto
+Este proyecto nos ayudo como objetivo realizar un diagnóstico arquitectónico de un sistema ERP existente y proponer mejoras aplicando principios SOLID y patrones de diseño. Solo esto nos enfocamos mas en la parte del backend.
+
+Durante nuestro análisis se identificaron problemas principalmente relacionados con:
+
+a) controllers con demasiadas responsabilidades
+
+b) plamiento entre capas
+
+c) falta de separación clara entre lógica de negocio y capa HTTP
+
+d) conversión de datos dispersa en el código.
+
+Para solucionar estos problemas se documentaron las decisiones mediante un Architecture Decision Record (ADR), donde hicimos las 10 propuestas de mejoras arquitectónicas orientadas a mejorar la mantenibilidad, escalabilidad y claridad del sistema.
+
+De esas propuestas se implementaron 5 cambios concretos, entre ellos:
+extracción de servicios para aplicar SRP, validación automática de requests, uso de DTOs para desacoplar la API, introducción de un Mapper para centralizar conversiones.
+
+Estas mejoras permiten que el sistema tenga:
+
+mejor separación de responsabilidades, menor acoplamiento entre componentes, código más limpio y mantenible, una arquitectura más preparada para crecer.
 
