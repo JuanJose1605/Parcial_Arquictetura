@@ -151,7 +151,7 @@ D) Decisión: centralizar config de seguridad y servicios JWT
 E) Mejora: cambios de seguridad no rompen dominios
 
 ## Cambios implementados 
-### implementado 1 - AuthService
+### implementado 1 - AuthService SRP
 1) Ubicación: backend/src/.../AuthController.java, AuthService.java
 
 2) Antes: controller contenía lógica de autenticación y token
@@ -159,3 +159,12 @@ E) Mejora: cambios de seguridad no rompen dominios
 3) Después: controller delega a AuthService y retorna respuesta
 
 4) Prueba funcional: Login válido → acceso normal; login inválido → error controlado (captura/video)
+
+### implementado 2 - ChurchService SRP 
+1) Ubicación: backend/src/.../churchController.java, churchService.java
+
+2) Antes: controller contenía lógica de negocio, validaciones y acceso a repositorio.
+
+3) Después: Se creó ChurchService para encapsular la lógica de creación y consulta de iglesia, dejando al controller únicamente como punto de entrada HTTP.
+
+4) Prueba funcional: 200 OK si ya existe una iglesia; 404 Not Found si no hay ninguna
